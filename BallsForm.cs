@@ -65,6 +65,8 @@ namespace GravityBalls
 		{
 			base.OnMouseMove(e);
 			Text = string.Format("Cursor ({0}, {1})", e.X, e.Y);
+            world.CursorX = e.X;
+            world.CursorY = e.Y;
 		}
 	}
 }
